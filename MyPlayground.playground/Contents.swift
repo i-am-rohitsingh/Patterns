@@ -1,5 +1,37 @@
 import UIKit
 import Foundation
+
+/*
+ *****
+ ****
+ ***
+ **
+ *
+ */
+func pattern5(of n: Int){
+    for i in 0...n-1{
+        for j in 0...n-1-i{
+            print("*", terminator: "")
+        }
+        print()
+    }
+}
+/*
+ 12345
+ 1234
+ 123
+ 12
+ 1
+ */
+func pattern6(of n: Int) {
+    for i in 0..<n {
+        for j in 1...n-i {
+            print(j, terminator: "")
+        }
+        print()
+    }
+}
+
 /*
     *
    ***
